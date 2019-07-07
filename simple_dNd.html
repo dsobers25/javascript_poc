@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>Drag and Drop</title>
+        <script src="simple_dNd.js"></script>
+		<style>
+            #dragItem {
+                float:left;
+                width:300px;
+                height: 70px;
+                background-color: red;
+                -webkit-user-select: none; /* Safari */        
+				-moz-user-select: none; /* Firefox */
+				-ms-user-select: none; /* IE10+/Edge */
+				user-select: none; /* Standard */
+				cursor: grab;
+            }
+            #dropArea {
+                float:right;
+                width:300px;
+                height: 70px;
+                background-color: blue;
+                -webkit-user-select: none; /* Safari */        
+				-moz-user-select: none; /* Firefox */
+				-ms-user-select: none; /* IE10+/Edge */
+				user-select: none; /* Standard */
+				cursor: pointer;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="dragItem" unselectable="on" draggable=true>I am the Red Left Box</div>
+        <div id="dropArea">I am the Blue Right Box</div>
+    </body>
+    </html>
